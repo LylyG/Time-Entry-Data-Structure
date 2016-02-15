@@ -1,14 +1,13 @@
 require 'activerecord'
 
-class DevelopersMigration < ActiveRecord::Migration
+class ProjectsMigration < ActiveRecord::Migration
   def change
-    create_table :developers do |i|
-      t.string :first_name
-      t.string :last_name
-      t.string :email
+    create_table :projects do |i|
+      t.string :project_name
       t.date :start_date
-      t.integer :front_end_id
-      t.integer :back_end_id
+      t.date :end_date
+      t.date :start_date
+      t.integer :client_id
     end
   end
 end
