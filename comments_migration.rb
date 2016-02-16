@@ -1,6 +1,8 @@
+require 'active_record'
+
 class CommentsMigration < ActiveRecord::Migration
   def change
-    create_table :comments do |i|
+    create_table :comments do |t|
       t.integer :developer_id
       t.integer :project_id
       t.integer :client_id

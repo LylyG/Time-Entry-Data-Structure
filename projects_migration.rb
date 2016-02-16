@@ -1,8 +1,8 @@
-require 'activerecord'
+require 'active_record'
 
 class ProjectsMigration < ActiveRecord::Migration
   def change
-    create_table :projects do |i|
+    create_table :projects do |t|
       t.string :project_name
       t.date :start_date
       t.date :end_date
